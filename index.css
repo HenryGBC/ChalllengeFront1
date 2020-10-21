@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 990px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team-section .team-section-header .title {
+  font-family: 'PT Serif', serif;
+  font-size: 2.5rem;
+}
+.team-section .team-section-header .description .description-title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.team-section .team-section-header .description .description-content {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  max-width: 370px;
+}
+.team-section-photos {
+  margin-top: 2rem;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+}
+
+.person {
+  width: 180px;
+}
+
+.person-img {
+  width: 100%;
+  display: flex;
+}
+.person:nth-child(even) .person-img {
+  margin-top: 3rem;
+}
+.person-img img {
+  width: 85%;
+}
+.role {
+  font-size: 0.8rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0;
+}
+
+.person-name {
+  margin-top: 0;
+}
+
+@media (min-width: 990px) {
+  .team-section .team-section-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+  }
+  .team-section .team-section-header .title {
+    margin-top: 0;
+  }
+  .team-section .team-section-header .description .description-title {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .team-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+  }
+
+  .person {
+    width: 225px;
+  }
+  .person-img img {
+    width: 100%;
+  }
+  .person:nth-child(even) .person-img {
+    margin-top: 0rem;
+  }
+  .person:nth-child(2) .person-img {
+    margin-top: 5rem;
+  }
+  .person:nth-child(5) .person-img {
+    margin-top: 5rem;
+  }
+}
